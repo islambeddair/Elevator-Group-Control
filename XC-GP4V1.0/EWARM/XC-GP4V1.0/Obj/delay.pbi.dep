@@ -1,0 +1,16 @@
+delay.pbi: \
+  C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX\ Projects\XC-GP4V1.0\Delay\delay.c \
+  C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX\ Projects\XC-GP4V1.0\Delay/delay.h \
+  C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX\ Projects\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Device/ST/STM32F0xx/Include\stm32f030xc.h \
+  C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX\ Projects\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Include\core_cm0.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Full.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX\ Projects\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Include/cmsis_version.h \
+  C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX\ Projects\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Include/cmsis_compiler.h \
+  C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX\ Projects\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Include\cmsis_iccarm.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\iccarm_builtin.h \
+  C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX\ Projects\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h

@@ -1,0 +1,62 @@
+#Generating source browse information for project XC-GP4V1.0
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build gpio.pbi : index gpio.xcl
+build main.pbi : index main.xcl
+build stm32f0xx_hal_msp.pbi : index stm32f0xx_hal_msp.xcl
+build stm32f0xx_it.pbi : index stm32f0xx_it.xcl
+build tim.pbi : index tim.xcl
+build usart.pbi : index usart.xcl
+build Comm.pbi : index Comm.xcl
+build delay.pbi : index delay.xcl
+build system_stm32f0xx.pbi : index system_stm32f0xx.xcl
+build stm32f0xx_hal.pbi : index stm32f0xx_hal.xcl
+build stm32f0xx_hal_cortex.pbi : index stm32f0xx_hal_cortex.xcl
+build stm32f0xx_hal_dma.pbi : index stm32f0xx_hal_dma.xcl
+build stm32f0xx_hal_exti.pbi : index stm32f0xx_hal_exti.xcl
+build stm32f0xx_hal_flash.pbi : index stm32f0xx_hal_flash.xcl
+build stm32f0xx_hal_flash_ex.pbi : index stm32f0xx_hal_flash_ex.xcl
+build stm32f0xx_hal_gpio.pbi : index stm32f0xx_hal_gpio.xcl
+build stm32f0xx_hal_i2c.pbi : index stm32f0xx_hal_i2c.xcl
+build stm32f0xx_hal_i2c_ex.pbi : index stm32f0xx_hal_i2c_ex.xcl
+build stm32f0xx_hal_pwr.pbi : index stm32f0xx_hal_pwr.xcl
+build stm32f0xx_hal_pwr_ex.pbi : index stm32f0xx_hal_pwr_ex.xcl
+build stm32f0xx_hal_rcc.pbi : index stm32f0xx_hal_rcc.xcl
+build stm32f0xx_hal_rcc_ex.pbi : index stm32f0xx_hal_rcc_ex.xcl
+build stm32f0xx_hal_tim.pbi : index stm32f0xx_hal_tim.xcl
+build stm32f0xx_hal_tim_ex.pbi : index stm32f0xx_hal_tim_ex.xcl
+build stm32f0xx_hal_uart.pbi : index stm32f0xx_hal_uart.xcl
+build stm32f0xx_hal_uart_ex.pbi : index stm32f0xx_hal_uart_ex.xcl
+build Elevator_Control.pbi : index Elevator_Control.xcl
+build ShiftIn165.pbi : index ShiftIn165.xcl
+build ShiftOut595.pbi : index ShiftOut595.xcl
+build User_Interface.pbi : index User_Interface.xcl
+build XC-GP4V1.0_part0.pbi : link gpio.pbi main.pbi stm32f0xx_hal_msp.pbi stm32f0xx_it.pbi tim.pbi
+build XC-GP4V1.0_part1.pbi : link usart.pbi Comm.pbi delay.pbi system_stm32f0xx.pbi stm32f0xx_hal.pbi
+build XC-GP4V1.0_part2.pbi : link stm32f0xx_hal_cortex.pbi stm32f0xx_hal_dma.pbi stm32f0xx_hal_exti.pbi stm32f0xx_hal_flash.pbi stm32f0xx_hal_flash_ex.pbi
+build XC-GP4V1.0_part3.pbi : link stm32f0xx_hal_gpio.pbi stm32f0xx_hal_i2c.pbi stm32f0xx_hal_i2c_ex.pbi stm32f0xx_hal_pwr.pbi stm32f0xx_hal_pwr_ex.pbi
+build XC-GP4V1.0_part4.pbi : link stm32f0xx_hal_rcc.pbi stm32f0xx_hal_rcc_ex.pbi stm32f0xx_hal_tim.pbi stm32f0xx_hal_tim_ex.pbi stm32f0xx_hal_uart.pbi
+build XC-GP4V1.0_part5.pbi : link stm32f0xx_hal_uart_ex.pbi Elevator_Control.pbi ShiftIn165.pbi ShiftOut595.pbi User_Interface.pbi
+build XC-GP4V1.0.pbd : link XC-GP4V1.0_part0.pbi XC-GP4V1.0_part1.pbi XC-GP4V1.0_part2.pbi XC-GP4V1.0_part3.pbi XC-GP4V1.0_part4.pbi XC-GP4V1.0_part5.pbi
+build XC-GP4V1.0.pbw : browsedata XC-GP4V1.0.pbd
+
+
