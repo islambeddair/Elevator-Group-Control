@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\settings\XC-GP4V1.0.XC-GP4V1.0.general.xcl" --backend -f "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\settings\XC-GP4V1.0.XC-GP4V1.0.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\settings\XC-GP4V1.0.XC-GP4V1.0.general.xcl" --backend -f "C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\settings\XC-GP4V1.0.XC-GP4V1.0.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\settings\XC-GP4V1.0.XC-GP4V1.0.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\settings\XC-GP4V1.0.XC-GP4V1.0.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\settings\XC-GP4V1.0.XC-GP4V1.0.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\settings\XC-GP4V1.0.XC-GP4V1.0.driver.xcl" 
 
 @echo off 
 :end

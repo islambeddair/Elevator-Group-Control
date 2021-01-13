@@ -1,86 +1,53 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.1.212/W32 for ARM                  13/Jan/2021  14:55:15
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  13/Jan/2021  15:31:41
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =
-#        C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Exe\XC-GP4V1.0.out
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Exe\XC-GP4V1.0.out
 #    Map file     =
-#        C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\List\XC-GP4V1.0.map
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\List\XC-GP4V1.0.map
 #    Command line =
-#        -f C:\Users\ISLAMB~1.ULT\AppData\Local\Temp\EW30A0.tmp
-#        ("C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\Comm.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\delay.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\Elevator_Control.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\gpio.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\main.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\ShiftIn165.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\ShiftOut595.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\startup_stm32f030xc.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_cortex.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_dma.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_exti.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_flash.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_flash_ex.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_gpio.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_i2c.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_i2c_ex.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_msp.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_pwr.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_pwr_ex.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_rcc.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_rcc_ex.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_tim.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_tim_ex.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_uart.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_uart_ex.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_it.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\system_stm32f0xx.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\tim.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\usart.o"
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\User_Interface.o" --redirect
-#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --no_out_extension -o
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Exe\XC-GP4V1.0.out" --map
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\List\XC-GP4V1.0.map" --config
-#        "C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX
-#        Projects\XC-GP4V1.0\EWARM/stm32f030xc_flash.icf" --entry
-#        __iar_program_start --redirect __write=__write_buffered --vfe
+#        -f C:\Users\ISLAMB~1.ULT\AppData\Local\Temp\EW8952.tmp
+#        (C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\Comm.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\delay.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\Elevator_Control.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\gpio.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\main.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\ShiftIn165.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\ShiftOut595.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\startup_stm32f030xc.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_cortex.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_dma.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_exti.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_flash.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_flash_ex.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_gpio.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_i2c.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_i2c_ex.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_msp.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_pwr.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_pwr_ex.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_rcc.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_rcc_ex.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_tim.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_tim_ex.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_uart.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_hal_uart_ex.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_it.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\system_stm32f0xx.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\tim.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\usart.o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\User_Interface.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Exe\XC-GP4V1.0.out
+#        --map
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\List\XC-GP4V1.0.map
+#        --config
+#        C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM/stm32f030xc_flash.icf
+#        --entry __iar_program_start --redirect __write=__write_buffered --vfe
 #        --text_out locale)
 #
 ###############################################################################
@@ -122,7 +89,7 @@ initialize by copy { rw };
   .intvec            ro code   0x800'0000    0xc0  startup_stm32f030xc.o [1]
                              - 0x800'00c0    0xc0
 
-"P1":                                      0x7787
+"P1":                                      0x77dd
   .text              ro code   0x800'00c0  0x134a  User_Interface.o [1]
   .text              ro code   0x800'140a    0x7e  lz77_init_single.o [4]
   .text              ro code   0x800'1488   0x904  Comm.o [1]
@@ -187,55 +154,55 @@ initialize by copy { rw };
   .text              ro code   0x800'7180     0x2  I64DivZer.o [4]
   .text              ro code   0x800'7182     0x2  startup_stm32f030xc.o [1]
   .text              ro code   0x800'7184     0xc  XXexit.o [4]
-  .rodata            const     0x800'7190    0x8a  xprintffull.o [2]
-  .text              ro code   0x800'721a     0x2  startup_stm32f030xc.o [1]
-  .rodata            const     0x800'721c    0x84  stm32f0xx_hal_cortex.o [1]
-  .rodata            const     0x800'72a0    0x84  stm32f0xx_hal_gpio.o [1]
-  .rodata            const     0x800'7324    0x84  stm32f0xx_hal_rcc_ex.o [1]
-  .rodata            const     0x800'73a8    0x84  stm32f0xx_hal_tim_ex.o [1]
-  .rodata            const     0x800'742c    0x84  stm32f0xx_hal_uart.o [1]
-  .rodata            const     0x800'74b0    0x80  stm32f0xx_hal_rcc.o [1]
-  .rodata            const     0x800'7530    0x80  stm32f0xx_hal_tim.o [1]
-  .text              ro code   0x800'75b0    0x74  stm32f0xx_it.o [1]
-  .text              ro code   0x800'7624    0x28  printf.o [2]
-  .text              ro code   0x800'764c    0x18  stm32f0xx_hal.o [1]
-  .text              ro code   0x800'7664    0x3c  zero_init3.o [4]
-  .text              ro code   0x800'76a0    0x28  data_init.o [4]
-  .iar.init_table    const     0x800'76c8    0x20  - Linker created -
-  .text              ro code   0x800'76e8    0x1e  cmain.o [4]
-  .text              ro code   0x800'7706     0x4  low_level_init.o [2]
-  .text              ro code   0x800'770a     0x8  exit.o [2]
-  .text              ro code   0x800'7712     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'7714     0xa  cexit.o [4]
-  .text              ro code   0x800'771e    0x1c  xencoding_8859_1.o [2]
-  .text              ro code   0x800'773a    0x16  xprout.o [2]
-  .text              ro code   0x800'7750    0x10  putchar.o [2]
-  .rodata            const     0x800'7760    0x14  stm32f0xx_it.o [1]
-  .rodata            const     0x800'7774    0x10  stm32f0xx_hal_rcc.o [1]
-  .rodata            const     0x800'7784    0x10  stm32f0xx_hal_rcc.o [1]
-  .rodata            const     0x800'7794    0x10  system_stm32f0xx.o [1]
-  .text              ro code   0x800'77a4    0x10  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77b4     0xc  cstartup_M.o [4]
-  .rodata            const     0x800'77c0     0x8  system_stm32f0xx.o [1]
-  .text              ro code   0x800'77c8     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77ca     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77cc     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77ce     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77d0     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77d2     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77d4     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77d6     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77d8     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77da     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77dc     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77de     0x2  startup_stm32f030xc.o [1]
-  .text              ro code   0x800'77e0     0x2  startup_stm32f030xc.o [1]
-  .rodata            const     0x800'77e2     0x1  xlocale_c.o [2]
-  .text              ro code   0x800'77e4     0x2  system_stm32f0xx.o [1]
-  .rodata            const     0x800'77e6     0x0  zero_init3.o [4]
-  .rodata            const     0x800'77e6     0x0  lz77_init_single.o [4]
-  Initializer bytes  const     0x800'77e6    0x61  <for P2-1>
-                             - 0x800'7847  0x7787
+  .rodata            const     0x800'7190    0x90  stm32f0xx_hal_cortex.o [1]
+  .rodata            const     0x800'7220    0x90  stm32f0xx_hal_gpio.o [1]
+  .rodata            const     0x800'72b0    0x90  stm32f0xx_hal_rcc_ex.o [1]
+  .rodata            const     0x800'7340    0x90  stm32f0xx_hal_tim_ex.o [1]
+  .rodata            const     0x800'73d0    0x90  stm32f0xx_hal_uart.o [1]
+  .rodata            const     0x800'7460    0x8c  stm32f0xx_hal_rcc.o [1]
+  .rodata            const     0x800'74ec    0x8c  stm32f0xx_hal_tim.o [1]
+  .rodata            const     0x800'7578    0x8a  xprintffull.o [2]
+  .text              ro code   0x800'7602     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7604    0x74  stm32f0xx_it.o [1]
+  .text              ro code   0x800'7678    0x28  printf.o [2]
+  .text              ro code   0x800'76a0    0x18  stm32f0xx_hal.o [1]
+  .text              ro code   0x800'76b8    0x3c  zero_init3.o [4]
+  .text              ro code   0x800'76f4    0x28  data_init.o [4]
+  .iar.init_table    const     0x800'771c    0x20  - Linker created -
+  .text              ro code   0x800'773c    0x1e  cmain.o [4]
+  .text              ro code   0x800'775a     0x4  low_level_init.o [2]
+  .text              ro code   0x800'775e     0x8  exit.o [2]
+  .text              ro code   0x800'7766     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7768     0xa  cexit.o [4]
+  .text              ro code   0x800'7772    0x1c  xencoding_8859_1.o [2]
+  .text              ro code   0x800'778e    0x16  xprout.o [2]
+  .text              ro code   0x800'77a4    0x10  putchar.o [2]
+  .rodata            const     0x800'77b4    0x14  stm32f0xx_it.o [1]
+  .rodata            const     0x800'77c8    0x10  stm32f0xx_hal_rcc.o [1]
+  .rodata            const     0x800'77d8    0x10  stm32f0xx_hal_rcc.o [1]
+  .rodata            const     0x800'77e8    0x10  system_stm32f0xx.o [1]
+  .text              ro code   0x800'77f8    0x10  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7808     0xc  cstartup_M.o [4]
+  .rodata            const     0x800'7814     0x8  system_stm32f0xx.o [1]
+  .text              ro code   0x800'781c     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'781e     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7820     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7822     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7824     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7826     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7828     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'782a     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'782c     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'782e     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7830     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7832     0x2  startup_stm32f030xc.o [1]
+  .text              ro code   0x800'7834     0x2  startup_stm32f030xc.o [1]
+  .rodata            const     0x800'7836     0x1  xlocale_c.o [2]
+  .text              ro code   0x800'7838     0x2  system_stm32f0xx.o [1]
+  .rodata            const     0x800'783a     0x0  zero_init3.o [4]
+  .rodata            const     0x800'783a     0x0  lz77_init_single.o [4]
+  Initializer bytes  const     0x800'783a    0x63  <for P2-1>
+                             - 0x800'789d  0x77dd
 
 "P2", part 1 of 3:                           0xe9
   P2-1                        0x2000'0000    0xe9  <Init block>
@@ -289,7 +256,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-   0x800'7847   0x803'ffff  0x3'87b9
+   0x800'789d   0x803'ffff  0x3'8763
   0x2000'00e9  0x2000'00eb       0x3
   0x2000'0e60  0x2000'7fff    0x71a0
 
@@ -305,8 +272,8 @@ Zero (__iar_zero_init3)
           0x2000'00ec  0x973
 
 Copy/lz77 (__iar_lz77_init_single3)
-    1 source range, total size 0x61 (41% of destination):
-           0x800'77e6   0x61
+    1 source range, total size 0x63 (42% of destination):
+           0x800'783a   0x63
     1 destination range, total size 0xe9:
           0x2000'0000   0xe9
 
@@ -322,8 +289,8 @@ command line/config:
     -------------------------------------------------
     Total:
 
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj: [1]
-    Comm.o                    2'308        9      110
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj: [1]
+    Comm.o                    2'308       10      110
     Elevator_Control.o          908             1'029
     ShiftIn165.o                416
     ShiftOut595.o               560
@@ -331,22 +298,22 @@ C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM
     gpio.o                      236
     main.o                      794                96
     startup_stm32f030xc.o       254
-    stm32f0xx_hal.o             192        3        9
-    stm32f0xx_hal_cortex.o      316      132
+    stm32f0xx_hal.o             192        2        9
+    stm32f0xx_hal_cortex.o      316      144
     stm32f0xx_hal_dma.o         164
-    stm32f0xx_hal_gpio.o        984      132
+    stm32f0xx_hal_gpio.o        984      144
     stm32f0xx_hal_msp.o          52
-    stm32f0xx_hal_rcc.o       2'436      160
-    stm32f0xx_hal_rcc_ex.o      428      132
-    stm32f0xx_hal_tim.o       2'300      128
-    stm32f0xx_hal_tim_ex.o      264      132
-    stm32f0xx_hal_uart.o      3'840      132
+    stm32f0xx_hal_rcc.o       2'436      172
+    stm32f0xx_hal_rcc_ex.o      428      144
+    stm32f0xx_hal_tim.o       2'300      140
+    stm32f0xx_hal_tim_ex.o      264      144
+    stm32f0xx_hal_uart.o      3'840      144
     stm32f0xx_it.o              116       20
     system_stm32f0xx.o            2       26        4
     tim.o                       176                72
     usart.o                     972               792
     -------------------------------------------------
-    Total:                   22'656    1'006    2'368
+    Total:                   22'656    1'090    2'368
 
 dl6M_tlf.a: [2]
     abort.o                      10
@@ -356,13 +323,13 @@ dl6M_tlf.a: [2]
     putchar.o                    16
     xencoding_8859_1.o           28
     xfail_s.o                    72                 4
-    xfiles.o                              30      152
-    xlocale_c.o                 140       58      128
+    xfiles.o                              31      152
+    xlocale_c.o                 140       59      128
     xmbcurmax.o                  10
     xprintffull.o             4'414      138
     xprout.o                     22
     -------------------------------------------------
-    Total:                    4'764      226      284
+    Total:                    4'764      228      284
 
 m6M_tl.a: [3]
     DblAddSub.o                 424
@@ -399,7 +366,7 @@ rt6M_tl.a: [4]
     Gaps                          1
     Linker created                        32    1'024
 -----------------------------------------------------
-    Grand Total:             29'527    1'264    3'676
+    Grand Total:             29'527    1'350    3'676
 
 
 *******************************************************************************
@@ -408,11 +375,11 @@ rt6M_tl.a: [4]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base    0x800'76c8          --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'76e8          --   Gb  - Linker created -
-?main                    0x800'76e9         Code  Gb  cmain.o [4]
-AHBPrescTable            0x800'7794   0x10  Data  Gb  system_stm32f0xx.o [1]
-APBPrescTable            0x800'77c0    0x8  Data  Gb  system_stm32f0xx.o [1]
+.iar.init_table$$Base    0x800'771c          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'773c          --   Gb  - Linker created -
+?main                    0x800'773d         Code  Gb  cmain.o [4]
+AHBPrescTable            0x800'77e8   0x10  Data  Gb  system_stm32f0xx.o [1]
+APBPrescTable            0x800'7814    0x8  Data  Gb  system_stm32f0xx.o [1]
 CSTACK$$Base            0x2000'0a60          --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'0e60          --   Gb  - Linker created -
 CacheMore                0x800'6b1d   0x28  Code  Lc  xlocale_c.o [2]
@@ -435,7 +402,7 @@ HAL_GPIO_ReadPin         0x800'28d9   0x2e  Code  Gb  stm32f0xx_hal_gpio.o [1]
 HAL_GPIO_TogglePin       0x800'295d   0x2e  Code  Gb  stm32f0xx_hal_gpio.o [1]
 HAL_GPIO_WritePin        0x800'2911   0x4c  Code  Gb  stm32f0xx_hal_gpio.o [1]
 HAL_GetTick              0x800'5605    0xc  Code  Wk  stm32f0xx_hal.o [1]
-HAL_IncTick              0x800'764d   0x18  Code  Wk  stm32f0xx_hal.o [1]
+HAL_IncTick              0x800'76a1   0x18  Code  Wk  stm32f0xx_hal.o [1]
 HAL_Init                 0x800'3c09   0x1a  Code  Gb  stm32f0xx_hal.o [1]
 HAL_InitTick             0x800'5709   0x50  Code  Wk  stm32f0xx_hal.o [1]
 HAL_MspInit              0x800'5759   0x34  Code  Gb  stm32f0xx_hal_msp.o [1]
@@ -476,7 +443,7 @@ HAL_UART_TxCpltCallback
                          0x800'2b79    0xc  Code  Gb  main.o [1]
 HandleCallsForOutOffServiceElevator
                          0x800'0311  0x110  Code  Gb  User_Interface.o [1]
-HardFault_Handler        0x800'75b3    0xa  Code  Gb  stm32f0xx_it.o [1]
+HardFault_Handler        0x800'7607    0xa  Code  Gb  stm32f0xx_it.o [1]
 MX_GPIO_Init             0x800'3c29   0xec  Code  Gb  gpio.o [1]
 MX_TIM3_Init             0x800'40e1   0x70  Code  Gb  tim.o [1]
 MX_USART1_UART_Init      0x800'3d15   0x38  Code  Gb  usart.o [1]
@@ -485,28 +452,28 @@ MX_USART3_UART_Init      0x800'3d7d   0x38  Code  Gb  usart.o [1]
 MX_USART4_UART_Init      0x800'3db5   0x38  Code  Gb  usart.o [1]
 MX_USART5_UART_Init      0x800'3ded   0x38  Code  Gb  usart.o [1]
 MX_USART6_UART_Init      0x800'3e25   0x38  Code  Gb  usart.o [1]
-NMI_Handler              0x800'75b1    0x2  Code  Gb  stm32f0xx_it.o [1]
+NMI_Handler              0x800'7605    0x2  Code  Gb  stm32f0xx_it.o [1]
 OutOfServiceCounter     0x2000'0a58    0x2  Data  Lc  Comm.o [1]
-PendSV_Handler           0x800'75bf    0x2  Code  Gb  stm32f0xx_it.o [1]
+PendSV_Handler           0x800'7613    0x2  Code  Gb  stm32f0xx_it.o [1]
 RXdata                  0x2000'0a38    0x8  Data  Gb  main.o [1]
-Region$$Table$$Base      0x800'76c8          --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'76e8          --   Gb  - Linker created -
+Region$$Table$$Base      0x800'771c          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'773c          --   Gb  - Linker created -
 Rstusr_inf_chk_new_req_counter
                          0x800'1b89    0x8  Code  Gb  Comm.o [1]
 RxBufferElevator        0x2000'0948   0x48  Data  Gb  main.o [1]
-SVC_Handler              0x800'75bd    0x2  Code  Gb  stm32f0xx_it.o [1]
+SVC_Handler              0x800'7611    0x2  Code  Gb  stm32f0xx_it.o [1]
 SendCallsToElevatorWithSameCarPosition
                          0x800'0429  0x13e  Code  Gb  User_Interface.o [1]
 SetRequestLed            0x800'0231   0xe0  Code  Gb  User_Interface.o [1]
 ShiftOutLandingDN        0x800'2079   0x74  Code  Gb  ShiftOut595.o [1]
 ShiftOutLandingUp        0x800'200d   0x6c  Code  Gb  ShiftOut595.o [1]
 SysTick_Config           0x800'5831   0x32  Code  Lc  stm32f0xx_hal_cortex.o [1]
-SysTick_Handler          0x800'75c1    0x8  Code  Gb  stm32f0xx_it.o [1]
+SysTick_Handler          0x800'7615    0x8  Code  Gb  stm32f0xx_it.o [1]
 SystemClock_Config       0x800'2c45   0x72  Code  Gb  main.o [1]
 SystemCoreClock         0x2000'001c    0x4  Data  Gb  system_stm32f0xx.o [1]
-SystemInit               0x800'77e5    0x2  Code  Gb  system_stm32f0xx.o [1]
+SystemInit               0x800'7839    0x2  Code  Gb  system_stm32f0xx.o [1]
 TIM3_COMM_SET_NEW_TICK   0x800'1c51   0x3e  Code  Gb  Comm.o [1]
-TIM3_IRQHandler          0x800'75c9    0xa  Code  Gb  stm32f0xx_it.o [1]
+TIM3_IRQHandler          0x800'761d    0xa  Code  Gb  stm32f0xx_it.o [1]
 TIM_Base_SetConfig       0x800'4971   0x76  Code  Gb  stm32f0xx_hal_tim.o [1]
 TIM_ETR_SetConfig        0x800'4a61   0x18  Code  Gb  stm32f0xx_hal_tim.o [1]
 TIM_ITRx_SetConfig       0x800'4a51   0x10  Code  Lc  stm32f0xx_hal_tim.o [1]
@@ -530,19 +497,19 @@ UART_TxISR_16BIT         0x800'3a59   0x4a  Code  Lc  stm32f0xx_hal_uart.o [1]
 UART_TxISR_8BIT          0x800'3a15   0x44  Code  Lc  stm32f0xx_hal_uart.o [1]
 UART_WaitOnFlagUntilTimeout
                          0x800'3805   0xaa  Code  Gb  stm32f0xx_hal_uart.o [1]
-USART1_IRQHandler        0x800'75d3    0xa  Code  Gb  stm32f0xx_it.o [1]
-USART2_IRQHandler        0x800'75dd    0xa  Code  Gb  stm32f0xx_it.o [1]
-USART3_6_IRQHandler      0x800'75e7   0x1c  Code  Gb  stm32f0xx_it.o [1]
+USART1_IRQHandler        0x800'7627    0xa  Code  Gb  stm32f0xx_it.o [1]
+USART2_IRQHandler        0x800'7631    0xa  Code  Gb  stm32f0xx_it.o [1]
+USART3_6_IRQHandler      0x800'763b   0x1c  Code  Gb  stm32f0xx_it.o [1]
 USER_INF_CLR_ALL         0x800'21af   0x88  Code  Gb  ShiftOut595.o [1]
 USER_INF_CLR_LED         0x800'20ed   0xc2  Code  Gb  ShiftOut595.o [1]
 _Encoding_8859_1_Mbrlen
-                         0x800'772f    0x2  Code  Gb  xencoding_8859_1.o [2]
+                         0x800'7783    0x2  Code  Gb  xencoding_8859_1.o [2]
 _Encoding_8859_1_Wctomb
-                         0x800'771f   0x10  Code  Gb  xencoding_8859_1.o [2]
+                         0x800'7773   0x10  Code  Gb  xencoding_8859_1.o [2]
 _LitobFull               0x800'696f  0x120  Code  Lc  xprintffull.o [2]
 _Locale_lconv           0x2000'0020   0x38  Data  Lc  xlocale_c.o [2]
 _PrintfFull              0x800'59d9  0xdc2  Code  Gb  xprintffull.o [2]
-_Prout                   0x800'773b   0x16  Code  Gb  xprout.o [2]
+_Prout                   0x800'778f   0x16  Code  Gb  xprout.o [2]
 _PutcharsFull            0x800'6ae1   0x36  Code  Lc  xprintffull.o [2]
 _PutstrFull              0x800'68af   0xc0  Code  Lc  xprintffull.o [2]
 _PuttxtFull              0x800'679b  0x114  Code  Lc  xprintffull.o [2]
@@ -575,7 +542,7 @@ __aeabi_ui2d             0x800'6ce1         Code  Gb  IxxToDbl.o [3]
 __aeabi_uidiv            0x800'1f5f         Code  Gb  I32DivModFast.o [4]
 __aeabi_uidivmod         0x800'1f5f         Code  Gb  I32DivModFast.o [4]
 __aeabi_uldivmod         0x800'710d         Code  Gb  I64DivMod.o [4]
-__cmain                  0x800'76e9         Code  Gb  cmain.o [4]
+__cmain                  0x800'773d         Code  Gb  cmain.o [4]
 __exit                   0x800'7185         Code  Gb  XXexit.o [4]
 __iar_Fail_s             0x800'6bb9   0x22  Code  Gb  xfail_s.o [2]
 __iar_Mbcurmax           0x800'7103    0xa  Code  Gb  xmbcurmax.o [2]
@@ -586,22 +553,22 @@ __iar_Memset_word        0x800'4a91         Code  Gb  ABImemset.o [4]
 __iar_Stdout            0x2000'00a0   0x48  Data  Gb  xfiles.o [2]
 __iar_Strchr             0x800'6ba5         Code  Gb  strchr.o [4]
 __iar_d2uiz              0x800'6cb5         Code  Gb  DblToI32.o [3]
-__iar_data_init3         0x800'76a1   0x28  Code  Gb  data_init.o [4]
+__iar_data_init3         0x800'76f5   0x28  Code  Gb  data_init.o [4]
 __iar_globLocale        0x2000'0058   0x48  Data  Lc  xlocale_c.o [2]
 __iar_global_Locale      0x800'6b19    0x4  Code  Gb  xlocale_c.o [2]
 __iar_lz77_init_single3
                          0x800'140b   0x7e  Code  Gb  lz77_init_single.o [4]
-__iar_program_start      0x800'77b5         Code  Gb  cstartup_M.o [4]
-__iar_zero_init3         0x800'7665   0x3c  Code  Gb  zero_init3.o [4]
-__low_level_init         0x800'7707    0x4  Code  Gb  low_level_init.o [2]
+__iar_program_start      0x800'7809         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3         0x800'76b9   0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'775b    0x4  Code  Gb  low_level_init.o [2]
 __vector_table           0x800'0000         Data  Gb  startup_stm32f030xc.o [1]
-_call_main               0x800'76f5         Code  Gb  cmain.o [4]
-_exit                    0x800'7715         Code  Gb  cexit.o [4]
+_call_main               0x800'7749         Code  Gb  cmain.o [4]
+_exit                    0x800'7769         Code  Gb  cexit.o [4]
 _gLocale_mblen           0x800'6b81    0xa  Code  Gb  xlocale_c.o [2]
 _gLocale_mblenInt        0x800'6b45   0x34  Code  Gb  xlocale_c.o [2]
 _gLocale_wctomb          0x800'6b8b    0xa  Code  Gb  xlocale_c.o [2]
 _gLocale_wctombInt       0x800'6b79    0x8  Code  Gb  xlocale_c.o [2]
-_main                    0x800'7703         Code  Gb  cmain.o [4]
+_main                    0x800'7757         Code  Gb  cmain.o [4]
 abort                    0x800'7177    0xa  Code  Gb  abort.o [2]
 all_requestsDOWN        0x2000'0878   0x80  Data  Lc  User_Interface.o [1]
 all_requestsUP          0x2000'07f8   0x80  Data  Lc  User_Interface.o [1]
@@ -652,7 +619,7 @@ elevator_ctrl_set_event
                          0x800'2415   0xd8  Code  Gb  Elevator_Control.o [1]
 elevator_set_elevator_availability
                          0x800'230b   0x12  Code  Gb  Elevator_Control.o [1]
-exit                     0x800'770b    0x8  Code  Gb  exit.o [2]
+exit                     0x800'775f    0x8  Code  Gb  exit.o [2]
 findSmallestElement      0x800'1395   0x76  Code  Gb  User_Interface.o [1]
 fputc                    0x800'2b85   0x16  Code  Gb  main.o [1]
 frcount                 0x2000'0a48    0x8  Data  Gb  main.o [1]
@@ -673,8 +640,8 @@ localeconv               0x800'6b95    0x4  Code  Gb  xlocale_c.o [2]
 main                     0x800'2b9b   0x6c  Code  Gb  main.o [1]
 memchr                   0x800'6c11         Code  Gb  memchr.o [4]
 obuf                    0x2000'08f8   0x50  Data  Lc  xfiles.o [2]
-printf                   0x800'7625   0x28  Code  Gb  printf.o [2]
-putchar                  0x800'7751   0x10  Code  Gb  putchar.o [2]
+printf                   0x800'7679   0x28  Code  Gb  printf.o [2]
+putchar                  0x800'77a5   0x10  Code  Gb  putchar.o [2]
 read_shift_regsDN        0x800'1e5f   0xca  Code  Gb  ShiftIn165.o [1]
 read_shift_regsUp        0x800'1d8d   0xd2  Code  Gb  ShiftIn165.o [1]
 scale                    0x800'6a8f   0x44  Code  Lc  xprintffull.o [2]
@@ -692,13 +659,13 @@ uwTickFreq              0x2000'00e8    0x1  Data  Gb  stm32f0xx_hal.o [1]
 uwTickPrio              0x2000'0018    0x4  Data  Gb  stm32f0xx_hal.o [1]
 
 
-[1] = C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj
+[1] = C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj
 [2] = dl6M_tlf.a
 [3] = m6M_tl.a
 [4] = rt6M_tl.a
 
   29'527 bytes of readonly  code memory
-   1'264 bytes of readonly  data memory
+   1'350 bytes of readonly  data memory
    3'676 bytes of readwrite data memory
 
 Errors: none

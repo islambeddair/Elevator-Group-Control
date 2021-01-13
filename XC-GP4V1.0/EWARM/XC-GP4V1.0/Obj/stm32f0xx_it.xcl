@@ -1,66 +1,66 @@
-"C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Core\Src\stm32f0xx_it.c"
+"C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Core\Src\stm32f0xx_it.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_it.pbi.dep
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\XC-GP4V1.0\Obj\stm32f0xx_it.pbi.dep
 -o
 stm32f0xx_it.pbi
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Core\Src
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Core\Src
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM/../Core/Inc
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM/../Core/Inc
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\..\User_Interface
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\..\User_Interface
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\..\Elevator_Control
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\..\Elevator_Control
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\..\Communication
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\..\Communication
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\..\ShiftOut595
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\..\ShiftOut595
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\..\ShiftIn165
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\..\ShiftIn165
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\..\Config_File
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\..\Config_File
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM\..\Delay
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM\..\Delay
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM/../Drivers/STM32F0xx_HAL_Driver/Inc
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM/../Drivers/STM32F0xx_HAL_Driver/Inc
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM/../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM/../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Device/ST/STM32F0xx/Include
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Device/ST/STM32F0xx/Include
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Include
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\EWARM/../Drivers/CMSIS/Include
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Core\Inc
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Core\Inc
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\User_Interface
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\User_Interface
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Elevator_Control
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Elevator_Control
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Communication
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Communication
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\ShiftOut595
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\ShiftOut595
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\ShiftIn165
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\ShiftIn165
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Config_File
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Config_File
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Delay
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Delay
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Drivers\STM32F0xx_HAL_Driver\Inc
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Drivers\STM32F0xx_HAL_Driver\Inc
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Drivers\STM32F0xx_HAL_Driver\Inc\Legacy
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Drivers\STM32F0xx_HAL_Driver\Inc\Legacy
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
 -I
-C:\Users\islam.bedair.ULTIMATRUE\Documents\STM32CubeMX Projects\XC-GP4V1.0\Drivers\CMSIS\Include
+C:\Users\islam.bedair.ULTIMATRUE\Documents\My-Github\Elevator-Group-Control\XC-GP4V1.0\Drivers\CMSIS\Include
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
