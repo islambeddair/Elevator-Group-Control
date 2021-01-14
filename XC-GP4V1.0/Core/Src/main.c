@@ -69,7 +69,7 @@ void UART_Handle_RX_ISR(UART_HandleTypeDef *huart)
     {
       comm_set_event(ElevNo,COMM_FRAME_RECEIVED);
       frheader[ElevNo] = 0; frcount[ElevNo] = 0;
-      //HAL_UART_Transmit_IT(huart,GetTxBufferAddress(ElevNo),TX_FRAME_SIZE);
+      HAL_UART_Transmit_IT(huart,GetTxBufferAddress(ElevNo),TX_FRAME_SIZE);
     }
     else frcount[ElevNo]++;
   }

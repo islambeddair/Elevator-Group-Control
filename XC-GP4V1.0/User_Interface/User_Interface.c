@@ -253,7 +253,7 @@ void ElevatorDispatching(void)//the dispatching strategy the elevators use to de
     {
       for (uint8_t ElevatorNumber = 0; ElevatorNumber < TOTAL_ELEVATOR_NO; ElevatorNumber++)
         WaitingTimes[ElevatorNumber] = CalcAverageWaitingTime(ElevatorNumber,floor_index,UP);
-      ElevatorIndex=findSmallestElement(WaitingTimes,TOTAL_ELEVATOR_NO);
+      ElevatorIndex=findSmallestElement(WaitingTimes,floor_index,DOWN);
       elevator_Set_elevator_Request(ElevatorIndex,floor_index,UP);
       all_requestsUP[floor_index].detection = DETECTED;
       all_requestsUP[floor_index].assigned_elv = ElevatorIndex;
@@ -263,7 +263,7 @@ void ElevatorDispatching(void)//the dispatching strategy the elevators use to de
     {
       for (uint8_t ElevatorNumber = 0; ElevatorNumber < TOTAL_ELEVATOR_NO; ElevatorNumber++)
         WaitingTimes[ElevatorNumber] = CalcAverageWaitingTime(ElevatorNumber,floor_index,DOWN);
-      ElevatorIndex=findSmallestElement(WaitingTimes,TOTAL_ELEVATOR_NO);
+      ElevatorIndex=findSmallestElement(WaitingTimes,floor_index,UP);
       elevator_Set_elevator_Request(ElevatorIndex,floor_index,DOWN);
       all_requestsDOWN[floor_index].detection = DETECTED;
       all_requestsDOWN[floor_index].assigned_elv =ElevatorIndex;
@@ -906,25 +906,24 @@ int CalcAverageWaitingTime(int ElevatorCounter, int floor_index,Direction_Enm_Ty
   //printf("Elevator Number= %d Maximum = %d and Minimum = %d TravelingTime = %d and TotalStopageTime = %d\r\n", ElevatorCounter,maximum,minimum,TravelingTime,TotalStopageTime);
   return (TravelingTime + TotalStopageTime);
 }
-uint8_t findSmallestElement(int Array[],int ArraySize)
+uint8_t findSmallestElement(int Array[],uint8_t floor,Direction_Enm_TypeDef direction)
 {   
   uint8_t index=0;
   int smallest=0;
-  for(uint8_t i=0;i<ArraySize;i++)
+  for(uint8_t ElevatorNumber=0;ElevatorNumber<TOTAL_ELEVATOR_NO;ElevatorNumber++)
   {
-    if(elevator_ctrl_chk_elevator_availability(i) == IN_SERVICE)
+    if(elevator_ctrl_chk_elevator_availability(ElevatorNumber) == IN_SERVICE)
     {
-      smallest=Array[i];
-      index=i;
+      smallest=Array[ElevatorNumber];
+      index=ElevatorNumber;
       break;
     }
   }
-  for(uint8_t i=0;i<ArraySize;i++)
-  {
-    if((Array[i]<smallest)&&(elevator_ctrl_chk_elevator_availability(i) == IN_SERVICE))
+  for(uint8_t ElevatorNumber=0;ElevatorNumber<TOTAL_ELEVATOR_NO;ElevatorNumber++)  {
+    if((Array[ElevatorNumber]<smallest)&&(elevator_ctrl_chk_elevator_availability(ElevatorNumber) == IN_SERVICE)&&((get_req_assigned_elevator(floor,direction)!=ElevatorNumber)))
     {
-      smallest=Array[i];
-      index=i;
+      smallest=Array[ElevatorNumber];
+      index=ElevatorNumber;
     }
   }
   return index;

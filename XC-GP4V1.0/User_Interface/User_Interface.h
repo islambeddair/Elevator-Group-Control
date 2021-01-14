@@ -39,7 +39,7 @@ uint16_t GetRequestStatus(void);
 void   ClearAllRequests(void);
 int CalcAverageWaitingTime(int ElevatorCounter, int floor_index,Direction_Enm_TypeDef direction); //calculat the average waiting time 
 void selectionSort(int a[]) ;
-uint8_t findSmallestElement(int Array[],int ArraySize);
+uint8_t findSmallestElement(int Array[],uint8_t floor,Direction_Enm_TypeDef direction);
 /************************************* External Variables ******************************/
 /************************************* Functions ***************************************/
 
