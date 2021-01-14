@@ -29,7 +29,7 @@
 #define	MaxPossibleFloor		  32		/*!- Maximum Possible floors could be Added to system*/
 #define TOTAL_ELEVATOR_NO	          4	
 #define OutOfServiceCounterTimeout	  (uint16_t)30		/*!- 30 Sec time out*/
-#define USR_INF_CHK_NEW_REQ_TIMEOUT	  (uint16_t)3	        /*!- 3 sec*/
+#define USR_INF_CHK_NEW_REQ_TIMEOUT	  (uint16_t)2	        /*!- 3 sec*/
 #define FLOOR_SWITCH_NO		          (uint8_t)2				   /*!- used to define the number of switches per floor*/
 #define TOTAL_SWITCHES_NO	          (uint8_t)(NUMBER_FLOOR*FLOOR_SWITCH_NO-2)  /*!- used to define total number of building switched without UP16 and DOWN1*/
 #define REQUEST_DOWN_SECTION              (TOTAL_SWITCHES_NO/2)

@@ -194,50 +194,53 @@ uint8_t comm_get_elevator_data(uint8_t ActiveElevatorNumber1)
       OutOfServiceCounter=0;
     }
     for (floor = 0; floor <NUMBER_FLOOR; floor++)
-    {
-      // Landing Call UP !- Down Requests	floor_1  to    MaxFloor
-      /*!- check if this request already sent or not*/
-      if ((elevator_copy.external_requestUP[floor].active!=((comm_buffer[(RX_DUP_EXT_UP_1+(floor/8))]>>(floor%8))&0x01))
-          &&(get_req_assigned_elevator(floor,UP)==ActiveElevatorNumber1)
-            &&(elevator_copy.status==IN_SERVICE)
-              && (get_req_elevator_status(floor,UP)==SENT))
       {
-        clr_req(floor,UP);
-        elevator_copy.external_requestUP[floor].active = 0;
-        HAL_Delay(2);
+        // Landing Call UP !- Down Requests	floor_1  to    MaxFloor
+        /*!- check if this request already sent or not*/
+        if ((elevator_copy.external_requestUP[floor].active!=((comm_buffer[(RX_DUP_EXT_UP_1+(floor/8))]>>(floor%8))&0x01))
+            &&(get_req_assigned_elevator(floor,UP)==ActiveElevatorNumber1)
+              &&(elevator_copy.status==IN_SERVICE)
+                && (get_req_elevator_status(floor,UP)==SENT))
+        {
+          clr_req(floor,UP);
+          //USER_INF_CLR_LED(index, UP);
+          elevator_copy.external_requestUP[floor].active = 0;
+          //HAL_Delay(2);
+        }
+        // Landing Call DOWN !- Down Requests	floor_1  to    MaxFloor
+        /*!- check if this request already sent or not*/
+        if ((elevator_copy.external_requestDOWN[floor].active != ((comm_buffer[(RX_DUP_EXT_DOWN_1+(floor/8))]>>(floor%8))&0x01))
+            &&(get_req_assigned_elevator(floor,DOWN) == ActiveElevatorNumber1)
+              &&(elevator_copy.status==IN_SERVICE)
+                &&(get_req_elevator_status(floor,DOWN) == SENT))
+        {
+          clr_req(floor,DOWN);
+          //USER_INF_CLR_LED(index, DOWN);
+          elevator_copy.external_requestDOWN[floor].active = 0; 
+          //HAL_UART_Transmit(&huart2,&floor,1,1000);
+        }      
       }
-      // Landing Call DOWN !- Down Requests	floor_1  to    MaxFloor
-      /*!- check if this request already sent or not*/
-      if ((elevator_copy.external_requestDOWN[floor].active != ((comm_buffer[(RX_DUP_EXT_DOWN_1+(floor/8))]>>(floor%8))&0x01))
-          &&(get_req_assigned_elevator(floor,DOWN) == ActiveElevatorNumber1)
-            &&(elevator_copy.status==IN_SERVICE)
-              &&(get_req_elevator_status(floor,DOWN) == SENT))
-      {
-        clr_req(floor,DOWN);
-        elevator_copy.external_requestDOWN[floor].active = 0; 
-      }      
-    }
     elevator_ctrl_set_elevator_status((Elevator_TypeDef*)&elevator_copy, ActiveElevatorNumber1);
-//    for(uint8_t comm_passive_elevator=0;comm_passive_elevator< TOTAL_ELEVATOR_NO ;comm_passive_elevator++)
-//    {  
-//      //if(comm_passive_elevator==ActiveElevatorNumber1)continue;
-//      if((elevator_copy.direction!=DOWN)
-//         &&(elevator_copy.Speed==NOT_MOVE)
-//           &&(elevator_Get_elevator_Request(comm_passive_elevator,CurruntPosition,UP)==1)
-//             &&(get_req_assigned_elevator(CurruntPosition,UP)==comm_passive_elevator)
-//               &&(elevator_ctrl_chk_elevator_availability(comm_passive_elevator)==IN_SERVICE)
-//                 &&(elevator_ctrl_chk_elevator_availability(ActiveElevatorNumber1)==IN_SERVICE)
-//                   &&(get_req_elevator_status(CurruntPosition,UP) == SENT))
-//      { elevator_Clear_elevator_Request(comm_passive_elevator,CurruntPosition,UP); clr_req(CurruntPosition,UP);HAL_Delay(5);}
-//      else if((elevator_copy.direction!=UP)
-//              &&(elevator_copy.Speed==NOT_MOVE)
-//                &&(elevator_Get_elevator_Request(comm_passive_elevator,CurruntPosition,DOWN)==1)
-//                  &&(get_req_assigned_elevator(CurruntPosition,DOWN)==comm_passive_elevator)
-//                    &&(elevator_ctrl_chk_elevator_availability(comm_passive_elevator)==IN_SERVICE)
-//                      &&(elevator_ctrl_chk_elevator_availability(ActiveElevatorNumber1)==IN_SERVICE)
-//                        &&(get_req_elevator_status(CurruntPosition,DOWN) == SENT))
-//      { elevator_Clear_elevator_Request( comm_passive_elevator,CurruntPosition,DOWN); clr_req(CurruntPosition,DOWN);}
-//    }
+    for(uint8_t comm_passive_elevator=0;comm_passive_elevator< TOTAL_ELEVATOR_NO ;comm_passive_elevator++)
+    {  
+      //if(comm_passive_elevator==ActiveElevatorNumber1)continue;
+      if((elevator_copy.direction!=DOWN)
+         &&(elevator_copy.Speed==NOT_MOVE)
+           &&(elevator_Get_elevator_Request(comm_passive_elevator,CurruntPosition,UP)==1)
+             &&(get_req_assigned_elevator(CurruntPosition,UP)==comm_passive_elevator)
+               &&(elevator_ctrl_chk_elevator_availability(comm_passive_elevator)==IN_SERVICE)
+                 &&(elevator_ctrl_chk_elevator_availability(ActiveElevatorNumber1)==IN_SERVICE)
+                   &&(get_req_elevator_status(CurruntPosition,UP) == SENT))
+      { elevator_Clear_elevator_Request(comm_passive_elevator,CurruntPosition,UP); clr_req(CurruntPosition,UP);HAL_Delay(5);}
+      else if((elevator_copy.direction!=UP)
+              &&(elevator_copy.Speed==NOT_MOVE)
+                &&(elevator_Get_elevator_Request(comm_passive_elevator,CurruntPosition,DOWN)==1)
+                  &&(get_req_assigned_elevator(CurruntPosition,DOWN)==comm_passive_elevator)
+                    &&(elevator_ctrl_chk_elevator_availability(comm_passive_elevator)==IN_SERVICE)
+                      &&(elevator_ctrl_chk_elevator_availability(ActiveElevatorNumber1)==IN_SERVICE)
+                        &&(get_req_elevator_status(CurruntPosition,DOWN) == SENT))
+      { elevator_Clear_elevator_Request( comm_passive_elevator,CurruntPosition,DOWN); clr_req(CurruntPosition,DOWN);}
+    }
     comm_set_event(ActiveElevatorNumber1,COMM_SEND_ACK);
     result=true;
   }

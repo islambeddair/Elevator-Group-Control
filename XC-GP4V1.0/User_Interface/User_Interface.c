@@ -35,7 +35,7 @@ b)Stoppage time is numbers of external call and internal car calls withen car po
 static Request_User_Inf_TypeDef all_requestsUP[NUMBER_FLOOR];       //total landing call mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 static Request_User_Inf_TypeDef all_requestsDOWN[NUMBER_FLOOR];     //total landing call mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 static uint16_t                 user_inf_flags;
-#define ExternalRequestTIMEOUT   60  // 60 Second 
+#define ExternalRequestTIMEOUT   200  // 60 Second 
 ///////////////////////////////////////////////
 
 /************************************* Functions *************************************/
@@ -47,15 +47,16 @@ static uint16_t                 user_inf_flags;
 */  
 void user_interface_task(void)
 {
+  SetRequestLed();                             // Set Led of all active Request 
   if(GetOutOfServiceCounter()>OutOfServiceCounterTimeout)
     ClearAllRequests();
   else
   {
     if(Getusr_inf_chk_new_req_counter()>USR_INF_CHK_NEW_REQ_TIMEOUT)
     {
+      LandingCallsTimer();
       HandleCallsForOutOffServiceElevator();
-      //LandingCallsTimer();
-      //LandingCallsTimerScaner();
+      LandingCallsTimerScaner();
       Rstusr_inf_chk_new_req_counter();
     }
     check_new_req();                            // Check new requests and arrange it in suitable format
@@ -71,6 +72,7 @@ void user_interface_task(void)
 * @retval       None
 * @note
 */
+
 void check_new_req(void)
 {
   //////////////////////////////////////////////////////////////////////// Check up requests /////////////////////////
@@ -135,7 +137,6 @@ void HandleCallsForOutOffServiceElevator(void)
     if(elevator_ctrl_chk_elevator_availability(ElevatorNumber)==OUT_SERVICE)
     {
       //printf("HandleCallsForOutOffServiceElevator =%d\r\n",ElevatorNumber);
-      
       /*!- Search on all floors and all directions*/
       for (uint8_t floor_index = 0; floor_index < NUMBER_FLOOR; floor_index++)
       {
@@ -288,7 +289,7 @@ void get_all_req(Request_TypeDef* all_request_copy,Direction_Enm_TypeDef directi
       memcpy((Request_TypeDef*)all_request_copy, (Request_TypeDef*)&all_requestsUP[i].request, sizeof(Request_TypeDef));
     }
   }
-  else// if(direction==DOWN)
+  else if(direction==DOWN)
   {
     for (uint8_t i = 0; i < NUMBER_FLOOR; i++)
     {
@@ -411,9 +412,9 @@ need to be revised
 */
 void clr_req(uint8_t index,Direction_Enm_TypeDef direction)
 {
+  //USER_INF_CLR_LED(index,direction);
   if (direction == UP)
   {
-    USER_INF_CLR_LED(index, UP);
     all_requestsUP[index].request.active = 0;
     all_requestsUP[index].request.timer = 0;
     all_requestsUP[index].assigned_elv = NOT_ASSIGNED;
@@ -422,7 +423,6 @@ void clr_req(uint8_t index,Direction_Enm_TypeDef direction)
   }
   else if(direction==DOWN)
   {
-    USER_INF_CLR_LED(index, DOWN);
     all_requestsDOWN[index].request.active = 0;
     all_requestsDOWN[index].request.timer = 0;
     all_requestsDOWN[index].assigned_elv = NOT_ASSIGNED;
@@ -919,7 +919,7 @@ uint8_t findSmallestElement(int Array[],uint8_t floor,Direction_Enm_TypeDef dire
       break;
     }
   }
-  for(uint8_t ElevatorNumber=0;ElevatorNumber<TOTAL_ELEVATOR_NO;ElevatorNumber++)  {
+  for(uint8_t ElevatorNumber=0;ElevatorNumber<TOTAL_ELEVATOR_NO;ElevatorNumber++){
     if((Array[ElevatorNumber]<smallest)&&(elevator_ctrl_chk_elevator_availability(ElevatorNumber) == IN_SERVICE)&&((get_req_assigned_elevator(floor,direction)!=ElevatorNumber)))
     {
       smallest=Array[ElevatorNumber];
